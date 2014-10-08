@@ -1,0 +1,64 @@
+#loginPage_cat {
+	background-image: url('../img/hp03.jpg') !important;
+	background-position: 0px 60px;
+	background-size: 260%;
+}
+
+.footer_cat h3{
+	text-transform: capitalize;
+	font-weight: normal;
+}
+
+.logoApp_cat {
+	text-align: center;
+}
+
+.logoApp_cat img {
+	height: auto;
+}
+
+
+.ui-header {
+	padding-top: 20px;
+}
+
+.ui-header .ui-toolbar-back-btn {
+	margin-top: 20px;
+	background: none !important;
+	background-color: none !important;
+	border: none;
+	box-shadow: none;
+}
+
+
+/** INPUT **/
+.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
+	margin: 10px 0;
+}
+
+.big-button {
+	padding: 40px;
+}
+
+
+/*ORDERS*/
+.ui-collapsible-content a {
+    text-decoration: none;
+}
+
+.ui-collapsible-heading img {
+    height: 15px;
+    margin-right: 10px;
+}
+
+.red_icon {
+    background-image: url('../img/red.png');
+}
+
+.yellow_icon {
+    background-image: url('../img/yellow.png');
+}
+
+.green_icon {
+    background-image: url('../img/green.png');
+}

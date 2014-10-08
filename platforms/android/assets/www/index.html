@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.2.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.2.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/trovacigusto.css" />
+		<link rel="stylesheet" type="text/css" href="css/themes/trovacigusto.css" />
+		<link rel="stylesheet" type="text/css" href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" />
+        <title>TrovaciGusto</title>
+    </head>
+    <body>
+    	<!-- LOGIN PAGE -->
+        <div data-role="page" id="loginPage_cat">
+		    <div data-theme="" data-role="header">
+		        <h3>TrovaciGusto</h3>
+		    </div>
+		 
+
+		    <div data-role="content">
+
+		    	<div class="logoApp_cat">
+		    		<img src="img/logo.png" style="width: 100%;" alt="TrovaciGusto LOGO">
+		    	</div>
+
+			    <div class="login_cat">
+			    	<!--<form method="PUT" action="api/auth" data-ajax="false">-->
+				        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+				                     
+				            <li data-role="list-divider" >
+				                <input type="text" placeholder="USERNAME" id="username_cat"/>
+				            </li>            
+				                    
+				             <li data-role="list-divider" >
+				                <input type="password" placeholder="PASSWORD" id="pwd_cat"/>
+				            </li>            
+				             <li data-role="list-divider" > 
+				             	<!-- remove comment to alternate standard or fake LOGIN flow -->
+				             	 <a id="submitLogin_cat" data-role="button" class="ui-btn" data-mini="true" data-theme="a">LOGIN</a>
+				             	<!-- <a href="#homePage_cat" data-role="button" data-transition="slide" class="ui-btn" data-theme="a">LOGIN</a> -->
+				            </li>             
+				        </ul>
+				    <!--</form>-->
+				</div>
+				
+		    </div>
+
+
+		    <div data-theme="" data-role="footer" data-position="fixed" class="footer_cat">
+		        <h3>Some copyright information about TrovaciGusto</h3>
+		    </div>
+		</div>
+
+
+
+
+		<!-- HOME PAGE -->
+        <div data-role="page" id="homePage_cat">
+		    <div data-theme="a" data-role="header" data-position="fixed">
+		        <h3>TrovaciGusto</h3>
+		    </div>
+		 
+
+		    <div data-role="content" class="scrollable">
+
+		    	<!-- Elenco clienti -->
+		    	<div>
+		    		<a id="customersList" data-role="button" class="big-button">ELENCO CLIENTI</a>
+		    	</div>
+
+		    	<!-- Elenco ordinazioni -->
+		    	<div>
+		    		<a id="ordersLists" data-role="button" class="big-button">ELENCO ORDINAZIONI</a>
+		    	</div>
+				
+		    </div>
+
+
+		    <div data-theme="" data-role="footer" data-position="fixed" class="footer_cat">
+		        <h3>Some copyright information about TrovaciGusto</h3>
+		    </div>
+		</div>
+
+
+
+		<!-- CUSTOMERS LIST -->
+        <div data-role="page" id="customersList_cat">
+		    <div data-theme="a" data-role="header" data-position="fixed" data-add-back-btn="true">
+		        <h3>Elenco clienti</h3>
+		    </div>
+		 
+
+		    <div data-role="content" class="scrollable">
+
+		    	<!-- Elenco clienti -->
+		    	<ul id="customers" data-role="listview" data-autodividers="true" data-filter="true" data-inset="true">
+				    <!-- Populate items dinamically -->
+				</ul>
+				
+		    </div>
+
+
+		    <div data-theme="" data-role="footer" data-position="fixed" class="footer_cat">
+		        <h3>Some copyright information about TrovaciGusto</h3>
+		    </div>
+		</div>
+
+
+		<!-- CUSTOMER DETAILS -->
+        <div data-role="page" id="customersDetail_cat">
+		    <div data-theme="a" data-role="header" data-position="fixed" data-add-back-btn="true">
+		        <h3>Elenco clienti</h3>
+		    </div>
+		 
+
+		    <div data-role="content" class="scrollable">
+
+		    	<div data-role="tabs" id="tabs">
+				 	<div data-role="navbar">
+					    <ul>
+					   		<li><a href="#detail" class="ui-btn-active">Dettagli</a></li>
+						    <li><a href="#map_canvas">Mappa</a></li>
+					    </ul>
+				  	</div>
+				    <div id="detail" class="ui-body-d ui-content">
+					    <div data-role="collapsibleset" data-theme="a" data-inset="false">
+						    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-collapsed="false">
+						    	<h4>Dettagli personali</h4>
+						        <ul id="customerPersonalDetails" data-role="listview">
+						            <!-- User details -->
+						        </ul>
+						    </div>
+						    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+						  		<h4>Note</h4>
+						        <ul data-role="listview">
+						            <!-- Some notes -->
+						            <textarea name="textarea" id="textarea"></textarea>
+						        </ul>
+						    </div>
+				  		</div>
+					</div>
+					
+					<div id="map_canvas" class="map ui-body-d ui-content">
+
+					</div>
+					
+		    	</div>
+		    </div>
+
+		    <div data-theme="" data-role="footer" data-position="fixed" class="footer_cat">
+		        <h3>Some copyright information about TrovaciGusto</h3>
+		    </div>
+		</div>
+
+
+
+
+
+ 		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.2.js"></script>
+
+        <script type="text/javascript" src="js/multiplatform.js"></script>
+        <script type="text/javascript" src="js/handleServer.js"></script>
+        <script type="text/javascript" src="js/customer.js"></script>
+        <script type="text/javascript" src="js/localStorageStuff.js"></script>
+		<script type="text/javascript" src="js/sha1.js"></script>
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+		<script type="text/javascript" src="js/maps.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+			    app.initialize();
+			});
+        </script>
+    </body>
+</html>
