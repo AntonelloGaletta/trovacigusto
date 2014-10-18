@@ -21,6 +21,7 @@ var app = {
         if (Multiplatform.navigator.connection("WIFI")) {
             
             document.addEventListener('deviceready', this.onDeviceReady, false);
+            document.addEventListener("backbutton", this.onBackKeyDown, false);
 
             // Login event
             $("#submitLogin_cat").on("tap", function() {
@@ -117,16 +118,18 @@ var app = {
 
                 // TAB MAPS
                 
-                /*
-                var _lat = (selectedCustomer.data.bundle.addresses[0].lat);
-                var _lon = (selectedCustomer.data.bundle.addresses[0].lon);
+
+//                var _lat = (selectedCustomer.data.bundle.addresses[0].lat);
+//                var _lon = (selectedCustomer.data.bundle.addresses[0].lon);
+                var _lat = 45.4643324;
+                var _lon = 9.1678994;
                 var _zoom = 12;
                 
                 var map = new GMaps({
                     div: '#map_canvas',
                     lat: _lat,
                     lng: _lon,
-                    zoom: 12,
+                    zoom: _zoom,
                     zoomControl : true,
                     zoomControlOpt: {
                         style : 'SMALL',
@@ -140,7 +143,22 @@ var app = {
                   lat: _lat,
                   lng: _lon
                 });
-                */
+
+                $('#map_canvas').css('height',getRealContentHeight());
+
+                function getRealContentHeight() {
+                    var header = $.mobile.activePage.find("div[data-role='header']:visible");
+                    var footer = $.mobile.activePage.find("div[data-role='footer']:visible");
+                    var content = $.mobile.activePage.find("div[data-role='content']:visible:visible");
+                    var viewport_height = $(window).height();
+
+                    var content_height = viewport_height - header.outerHeight() - footer.outerHeight();
+                    if((content.outerHeight() - header.outerHeight() - footer.outerHeight()) <= viewport_height) {
+                        content_height -= (content.outerHeight() - content.height());
+                    }
+                    return content_height;
+                }
+
             });
 
             $("#customersDetail_cat").on("pageshow", function(event) {
@@ -167,6 +185,7 @@ var app = {
                 ordersListview.html("");
                 var localOrders = localStorageCat.retriveOrders();
                 var status_icon = "";
+                var typeOfOrder = "";
                 
                 for (var i=0; i<localOrders.data.length; i++) {
                     
@@ -197,14 +216,26 @@ var app = {
                     } else {
                         status_icon = "yellow";
                     }
+
+                    if(order.data.serviceType == "delivery") {
+                        typeOfOrder = "delivery";
+                    } else if(order.data.serviceType == "table") {
+                        typeOfOrder = "table";
+                    } else if(order.data.serviceType == "takeaway") {
+                        typeOfOrder = "takeaway";
+                    } else {
+                        typeOfOrder = "null";
+                    }
+
                     var singleOrder = $("<div id='"+order.data.id+"' data-role='collapsible' data-iconpos='right'><h3>"
+                        +"<img src='img/"+typeOfOrder+".png' style='width: 30px; height: 30px;' />"
                         +"<img src='img/"+status_icon+".png' style='width: auto;' />"
                         +order.data.serviceType+"</h3>"
                         +"<div style='float: left; height: 60px;'>"
                         +"<p>Prezzo totale: <strong>"+order.data.totalPrice+order.data.currency+"</strong></p>"
                         +"<p>Orario: <strong>"+order.data.serviceTime+"</strong></p>"
                         +"</div>"
-                        +"<button style='float:right; height: 40px; margin-top: 20px;' data-id='"+order.data.id+"' id='customer_"+order.data.id+"'>VISUALIZZA</button>"
+                        +"<a data-role='button' data-theme='a' class='ui-btn' data-mini='true' style='float:right; margin-top: 20px;' data-id='"+order.data.id+"' id='customer_"+order.data.id+"'>VISUALIZZA</a>"
                         +"</div>");
 
                     singleOrder.on("tap", "#customer_"+order.data.id,function() {
@@ -228,8 +259,8 @@ var app = {
                     var detailsSelectedOrder;
                     
                     var staticInfo = "<img src='img/avatar.jpg' style='float:left;' /><p>NOME: <strong>Tizio</strong></p>"+"<p>COGNOME: <strong>Caio</strong></p><hr />";
-                    var buttonConfirm = "<a data-role='button' class='ui-btn' data-mini='true' data-theme='a' style='float: left;width: 40%;'>CONFERMA</a>";
-                    var buttonDecline = "<a data-role='button' id='declineBTN' class='ui-btn' data-mini='true' data-theme='a' style='float: right;width: 40%;'>CONFERMA</a>";
+                    var buttonConfirm = "<a data-role='button' data-theme='a' class='ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-check ui-btn-icon-left ui-btn-a' style='float: left;width: 30%;'>CONFERMA</a>";
+                    var buttonDecline = "<a href='#popupMenu' data-rel='popup' data-transition='slideup' class='ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-a' style='float: right;width: 30%;'>ANNULLA</a>";
                 
                     
                     _singleOrder.append(staticInfo);
@@ -268,6 +299,13 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+    },
+
+    onBackKeyDown: function() {
+        app.receivedEvent('onBackKeyDown');
+        if($.mobile.activePage.is('#loginPage_cat')){
+            e.preventDefault();
+        }
     },
 
     // Update DOM on a Received Event

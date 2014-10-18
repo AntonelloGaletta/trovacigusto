@@ -533,3 +533,339 @@ https://developer.apple.com/icloud/documentation/data-storage/
 2014-10-07 22:59:42.420 Trovaci Gusto[11363:547506] Communications error: <OS_xpc_error: <error: 0x2d275f4> { count = 1, contents =
 	"XPCErrorDescription" => <string: 0x2d2783c> { length = 22, contents = "Connection interrupted" }
 }>
+2014-10-18 12:20:59.692 Trovaci Gusto[2042:21463] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 12:20:59.711 Trovaci Gusto[2042:21463] Multi-tasking -> Device: YES, App: YES
+2014-10-18 12:20:59.830 Trovaci Gusto[2042:21463] Unlimited access to network resources
+2014-10-18 12:20:59.851 Trovaci Gusto[2042:21463] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 12:21:04.956 Trovaci Gusto[2042:21463] Resetting plugins due to page load.
+2014-10-18 12:21:08.942 Trovaci Gusto[2042:21463] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/549ECF69-7A76-435A-9C7E-AFF4E7B93CD2/Trovaci%20Gusto.app/www/index.html
+2014-10-18 13:13:11.973 Trovaci Gusto[2974:43741] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 13:13:11.984 Trovaci Gusto[2974:43741] Multi-tasking -> Device: YES, App: YES
+2014-10-18 13:13:12.057 Trovaci Gusto[2974:43741] Unlimited access to network resources
+2014-10-18 13:13:12.173 Trovaci Gusto[2974:43741] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 13:13:13.632 Trovaci Gusto[2974:43741] Resetting plugins due to page load.
+2014-10-18 13:13:15.253 Trovaci Gusto[2974:43741] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/18025A3A-2BB2-4346-8D9F-083545D67979/Trovaci%20Gusto.app/www/index.html
+2014-10-18 13:16:23.371 Trovaci Gusto[3425:45785] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 13:16:23.372 Trovaci Gusto[3425:45785] Multi-tasking -> Device: YES, App: YES
+2014-10-18 13:16:23.378 Trovaci Gusto[3425:45785] Unlimited access to network resources
+2014-10-18 13:16:23.380 Trovaci Gusto[3425:45785] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 13:16:23.598 Trovaci Gusto[3425:45785] Resetting plugins due to page load.
+2014-10-18 13:16:24.368 Trovaci Gusto[3425:45785] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/3DA49EF8-06F2-422B-ADF6-150694B6A429/Trovaci%20Gusto.app/www/index.html
+2014-10-18 13:26:26.481 Trovaci Gusto[4106:50612] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 13:26:26.490 Trovaci Gusto[4106:50612] Multi-tasking -> Device: YES, App: YES
+2014-10-18 13:26:26.498 Trovaci Gusto[4106:50612] Unlimited access to network resources
+2014-10-18 13:26:26.500 Trovaci Gusto[4106:50612] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 13:26:26.970 Trovaci Gusto[4106:50612] Resetting plugins due to page load.
+2014-10-18 13:26:27.655 Trovaci Gusto[4106:50612] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/5788CDD0-1BA6-4C84-9319-68FA55B855F8/Trovaci%20Gusto.app/www/index.html
+2014-10-18 13:29:01.688 Trovaci Gusto[4722:52395] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 13:29:01.702 Trovaci Gusto[4722:52395] Multi-tasking -> Device: YES, App: YES
+2014-10-18 13:29:01.708 Trovaci Gusto[4722:52395] Unlimited access to network resources
+2014-10-18 13:29:01.710 Trovaci Gusto[4722:52395] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 13:29:02.146 Trovaci Gusto[4722:52395] Resetting plugins due to page load.
+2014-10-18 13:29:02.881 Trovaci Gusto[4722:52395] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/B7A00DD5-D0B2-4EF4-A4EF-5710DDD3F105/Trovaci%20Gusto.app/www/index.html
+2014-10-18 13:33:44.055 Trovaci Gusto[5396:54922] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 13:33:44.072 Trovaci Gusto[5396:54922] Multi-tasking -> Device: YES, App: YES
+2014-10-18 13:33:44.078 Trovaci Gusto[5396:54922] Unlimited access to network resources
+2014-10-18 13:33:44.160 Trovaci Gusto[5396:54922] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 13:33:44.691 Trovaci Gusto[5396:54922] Resetting plugins due to page load.
+2014-10-18 13:33:45.406 Trovaci Gusto[5396:54922] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/F83384F8-D821-4A1F-9954-EA25BFAC44E5/Trovaci%20Gusto.app/www/index.html
+2014-10-18 13:35:20.425 Trovaci Gusto[6004:56694] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 13:35:20.426 Trovaci Gusto[6004:56694] Multi-tasking -> Device: YES, App: YES
+2014-10-18 13:35:20.431 Trovaci Gusto[6004:56694] Unlimited access to network resources
+2014-10-18 13:35:20.442 Trovaci Gusto[6004:56694] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 13:35:20.933 Trovaci Gusto[6004:56694] Resetting plugins due to page load.
+2014-10-18 13:35:21.745 Trovaci Gusto[6004:56694] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/F769EE01-0C26-49F3-9EB6-95E551367D69/Trovaci%20Gusto.app/www/index.html
+2014-10-18 13:36:32.115 Trovaci Gusto[6629:57924] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 13:36:32.136 Trovaci Gusto[6629:57924] Multi-tasking -> Device: YES, App: YES
+2014-10-18 13:36:32.141 Trovaci Gusto[6629:57924] Unlimited access to network resources
+2014-10-18 13:36:32.150 Trovaci Gusto[6629:57924] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 13:36:32.590 Trovaci Gusto[6629:57924] Resetting plugins due to page load.
+2014-10-18 13:36:33.305 Trovaci Gusto[6629:57924] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/FD588688-BCA2-4BD5-AB4D-4B1AB7867C72/Trovaci%20Gusto.app/www/index.html
+2014-10-18 13:46:29.451 Trovaci Gusto[7305:62512] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 13:46:29.466 Trovaci Gusto[7305:62512] Multi-tasking -> Device: YES, App: YES
+2014-10-18 13:46:29.472 Trovaci Gusto[7305:62512] Unlimited access to network resources
+2014-10-18 13:46:29.480 Trovaci Gusto[7305:62512] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 13:46:30.013 Trovaci Gusto[7305:62512] Resetting plugins due to page load.
+2014-10-18 13:46:30.810 Trovaci Gusto[7305:62512] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/1C217979-7DD5-4368-A378-D257973043D1/Trovaci%20Gusto.app/www/index.html
+2014-10-18 13:48:31.591 Trovaci Gusto[7946:64209] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 13:48:31.604 Trovaci Gusto[7946:64209] Multi-tasking -> Device: YES, App: YES
+2014-10-18 13:48:31.610 Trovaci Gusto[7946:64209] Unlimited access to network resources
+2014-10-18 13:48:31.618 Trovaci Gusto[7946:64209] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 13:48:32.168 Trovaci Gusto[7946:64209] Resetting plugins due to page load.
+2014-10-18 13:48:32.816 Trovaci Gusto[7946:64209] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/9484AADB-192F-4907-AACF-D44B99AB6C7E/Trovaci%20Gusto.app/www/index.html
+2014-10-18 15:04:55.438 Trovaci Gusto[8898:90281] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 15:04:55.458 Trovaci Gusto[8898:90281] Multi-tasking -> Device: YES, App: YES
+2014-10-18 15:04:55.551 Trovaci Gusto[8898:90281] Unlimited access to network resources
+2014-10-18 15:04:55.572 Trovaci Gusto[8898:90281] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 15:04:57.015 Trovaci Gusto[8898:90281] Resetting plugins due to page load.
+2014-10-18 15:04:59.401 Trovaci Gusto[8898:90281] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/9A8EBEF3-C791-4D1B-ACAA-11B73E6A3E47/Trovaci%20Gusto.app/www/index.html
+2014-10-18 15:06:02.851 Trovaci Gusto[9327:91548] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 15:06:02.852 Trovaci Gusto[9327:91548] Multi-tasking -> Device: YES, App: YES
+2014-10-18 15:06:02.858 Trovaci Gusto[9327:91548] Unlimited access to network resources
+2014-10-18 15:06:02.861 Trovaci Gusto[9327:91548] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 15:06:03.030 Trovaci Gusto[9327:91548] Resetting plugins due to page load.
+2014-10-18 15:06:03.643 Trovaci Gusto[9327:91548] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/1E00CB22-9903-4F79-9A8B-2DF3611BCC85/Trovaci%20Gusto.app/www/index.html
+2014-10-18 15:08:06.676 Trovaci Gusto[9965:93156] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 15:08:06.677 Trovaci Gusto[9965:93156] Multi-tasking -> Device: YES, App: YES
+2014-10-18 15:08:06.683 Trovaci Gusto[9965:93156] Unlimited access to network resources
+2014-10-18 15:08:06.686 Trovaci Gusto[9965:93156] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 15:08:06.847 Trovaci Gusto[9965:93156] Resetting plugins due to page load.
+2014-10-18 15:08:07.606 Trovaci Gusto[9965:93156] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/8A4FBBB0-E791-4EDF-9C0D-507FDA218672/Trovaci%20Gusto.app/www/index.html
+2014-10-18 15:08:51.226 Trovaci Gusto[10600:94368] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 15:08:51.227 Trovaci Gusto[10600:94368] Multi-tasking -> Device: YES, App: YES
+2014-10-18 15:08:51.233 Trovaci Gusto[10600:94368] Unlimited access to network resources
+2014-10-18 15:08:51.235 Trovaci Gusto[10600:94368] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 15:08:51.398 Trovaci Gusto[10600:94368] Resetting plugins due to page load.
+2014-10-18 15:08:52.077 Trovaci Gusto[10600:94368] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/F0C658FD-9775-466B-A2C9-465C729872FD/Trovaci%20Gusto.app/www/index.html
+2014-10-18 15:09:54.785 Trovaci Gusto[11202:95534] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 15:09:54.786 Trovaci Gusto[11202:95534] Multi-tasking -> Device: YES, App: YES
+2014-10-18 15:09:54.792 Trovaci Gusto[11202:95534] Unlimited access to network resources
+2014-10-18 15:09:54.794 Trovaci Gusto[11202:95534] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 15:09:55.010 Trovaci Gusto[11202:95534] Resetting plugins due to page load.
+2014-10-18 15:09:55.790 Trovaci Gusto[11202:95534] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/A3E1577A-E233-4930-9370-3EB728C7F998/Trovaci%20Gusto.app/www/index.html
+2014-10-18 15:18:21.938 Trovaci Gusto[11810:99330] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 15:18:21.939 Trovaci Gusto[11810:99330] Multi-tasking -> Device: YES, App: YES
+2014-10-18 15:18:21.945 Trovaci Gusto[11810:99330] Unlimited access to network resources
+2014-10-18 15:18:21.947 Trovaci Gusto[11810:99330] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 15:18:22.211 Trovaci Gusto[11810:99330] Resetting plugins due to page load.
+2014-10-18 15:18:22.847 Trovaci Gusto[11810:99330] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/6001DEA1-1A1F-4D7E-B27A-D3D385BC57D6/Trovaci%20Gusto.app/www/index.html
+2014-10-18 15:19:25.683 Trovaci Gusto[12428:100530] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 15:19:25.684 Trovaci Gusto[12428:100530] Multi-tasking -> Device: YES, App: YES
+2014-10-18 15:19:25.690 Trovaci Gusto[12428:100530] Unlimited access to network resources
+2014-10-18 15:19:25.692 Trovaci Gusto[12428:100530] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 15:19:25.854 Trovaci Gusto[12428:100530] Resetting plugins due to page load.
+2014-10-18 15:19:26.478 Trovaci Gusto[12428:100530] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/6D1EB636-EA3A-495C-8627-1DB1A307B24B/Trovaci%20Gusto.app/www/index.html
+2014-10-18 15:19:54.264 Trovaci Gusto[12962:101539] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 15:19:54.265 Trovaci Gusto[12962:101539] Multi-tasking -> Device: YES, App: YES
+2014-10-18 15:19:54.271 Trovaci Gusto[12962:101539] Unlimited access to network resources
+2014-10-18 15:19:54.273 Trovaci Gusto[12962:101539] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 15:19:54.448 Trovaci Gusto[12962:101539] Resetting plugins due to page load.
+2014-10-18 15:19:55.224 Trovaci Gusto[12962:101539] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/C7F66371-0054-485D-83CD-B0D9CAF07F9F/Trovaci%20Gusto.app/www/index.html
+2014-10-18 15:22:12.130 Trovaci Gusto[13533:103347] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 15:22:12.131 Trovaci Gusto[13533:103347] Multi-tasking -> Device: YES, App: YES
+2014-10-18 15:22:12.137 Trovaci Gusto[13533:103347] Unlimited access to network resources
+2014-10-18 15:22:12.139 Trovaci Gusto[13533:103347] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 15:22:12.305 Trovaci Gusto[13533:103347] Resetting plugins due to page load.
+2014-10-18 15:22:12.941 Trovaci Gusto[13533:103347] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/7560D949-2C19-4F24-BC8F-7174B9915F36/Trovaci%20Gusto.app/www/index.html
+2014-10-18 15:23:24.918 Trovaci Gusto[14195:104732] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 15:23:24.919 Trovaci Gusto[14195:104732] Multi-tasking -> Device: YES, App: YES
+2014-10-18 15:23:24.925 Trovaci Gusto[14195:104732] Unlimited access to network resources
+2014-10-18 15:23:24.927 Trovaci Gusto[14195:104732] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 15:23:25.079 Trovaci Gusto[14195:104732] Resetting plugins due to page load.
+2014-10-18 15:23:25.924 Trovaci Gusto[14195:104732] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/2864BB99-4437-4CCC-AD5C-2304A1BCF6BA/Trovaci%20Gusto.app/www/index.html
+2014-10-18 15:28:48.657 Trovaci Gusto[14817:107657] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 15:28:48.658 Trovaci Gusto[14817:107657] Multi-tasking -> Device: YES, App: YES
+2014-10-18 15:28:48.663 Trovaci Gusto[14817:107657] Unlimited access to network resources
+2014-10-18 15:28:48.665 Trovaci Gusto[14817:107657] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 15:28:49.469 Trovaci Gusto[14817:107657] Resetting plugins due to page load.
+2014-10-18 15:28:50.098 Trovaci Gusto[14817:107657] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/C4BC66E8-E932-4BA6-AEFA-65C4D7B70FC4/Trovaci%20Gusto.app/www/index.html
+2014-10-18 15:52:27.133 Trovaci Gusto[18510:123874] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 15:52:27.159 Trovaci Gusto[18510:123874] Multi-tasking -> Device: YES, App: YES
+2014-10-18 15:52:27.246 Trovaci Gusto[18510:123874] Unlimited access to network resources
+2014-10-18 15:52:27.266 Trovaci Gusto[18510:123874] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 15:52:29.126 Trovaci Gusto[18510:123874] Resetting plugins due to page load.
+2014-10-18 15:52:31.868 Trovaci Gusto[18510:123874] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/F069829E-E935-478E-A9A2-8E55BE7A2656/Trovaci%20Gusto.app/www/index.html
+2014-10-18 16:01:16.686 Trovaci Gusto[19734:129570] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 16:01:16.712 Trovaci Gusto[19734:129570] Multi-tasking -> Device: YES, App: YES
+2014-10-18 16:01:16.811 Trovaci Gusto[19734:129570] Unlimited access to network resources
+2014-10-18 16:01:16.837 Trovaci Gusto[19734:129570] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 16:01:18.953 Trovaci Gusto[19734:129570] Resetting plugins due to page load.
+2014-10-18 16:01:21.303 Trovaci Gusto[19734:129570] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/F4508F83-4506-4C0E-8D47-C3BA68C70E37/Trovaci%20Gusto.app/www/index.html
+2014-10-18 16:03:23.305 Trovaci Gusto[20270:131376] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 16:03:23.321 Trovaci Gusto[20270:131376] Multi-tasking -> Device: YES, App: YES
+2014-10-18 16:03:23.346 Trovaci Gusto[20270:131376] Unlimited access to network resources
+2014-10-18 16:03:23.367 Trovaci Gusto[20270:131376] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 16:03:24.073 Trovaci Gusto[20270:131376] Resetting plugins due to page load.
+2014-10-18 16:03:25.002 Trovaci Gusto[20270:131376] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/BFAFBAE2-0C09-4A31-A6B6-99363AAA84DF/Trovaci%20Gusto.app/www/index.html
+2014-10-18 16:18:20.713 Trovaci Gusto[21281:138784] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 16:18:20.716 Trovaci Gusto[21281:138784] Multi-tasking -> Device: YES, App: YES
+2014-10-18 16:18:20.938 Trovaci Gusto[21281:138784] Unlimited access to network resources
+2014-10-18 16:18:21.035 Trovaci Gusto[21281:138784] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 16:18:23.406 Trovaci Gusto[21281:138784] Resetting plugins due to page load.
+2014-10-18 16:18:24.575 Trovaci Gusto[21281:138784] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/64D57750-D95A-48B2-AF7C-3C662D0B912A/Trovaci%20Gusto.app/www/index.html
+2014-10-18 16:26:20.608 Trovaci Gusto[23069:144107] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 16:26:20.617 Trovaci Gusto[23069:144107] Multi-tasking -> Device: YES, App: YES
+2014-10-18 16:26:21.071 Trovaci Gusto[23069:144107] Unlimited access to network resources
+2014-10-18 16:26:21.120 Trovaci Gusto[23069:144107] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 16:26:23.854 Trovaci Gusto[23069:144107] Resetting plugins due to page load.
+2014-10-18 16:26:25.850 Trovaci Gusto[23069:144107] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/35552729-46FE-40A8-B4A0-A794D634DDD2/Trovaci%20Gusto.app/www/index.html
+2014-10-18 16:29:43.305 Trovaci Gusto[23813:146616] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 16:29:43.322 Trovaci Gusto[23813:146616] Multi-tasking -> Device: YES, App: YES
+2014-10-18 16:29:43.414 Trovaci Gusto[23813:146616] Unlimited access to network resources
+2014-10-18 16:29:43.449 Trovaci Gusto[23813:146616] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 16:29:45.984 Trovaci Gusto[23813:146616] Resetting plugins due to page load.
+2014-10-18 16:29:48.010 Trovaci Gusto[23813:146616] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/E81B1174-B3E4-4902-9650-A8C0331C5327/Trovaci%20Gusto.app/www/index.html
+2014-10-18 16:34:10.971 Trovaci Gusto[24525:149048] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-18 16:34:10.992 Trovaci Gusto[24525:149048] Multi-tasking -> Device: YES, App: YES
+2014-10-18 16:34:11.109 Trovaci Gusto[24525:149048] Unlimited access to network resources
+2014-10-18 16:34:11.218 Trovaci Gusto[24525:149048] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-18 16:34:13.933 Trovaci Gusto[24525:149048] Resetting plugins due to page load.
+2014-10-18 16:34:16.649 Trovaci Gusto[24525:149048] Finished load of: file:///Users/antonello/Library/Developer/CoreSimulator/Devices/9B7D9790-F221-44F6-AA24-1678EF647911/data/Containers/Bundle/Application/2C82A8B0-687B-43C1-8750-3283B9E14E7F/Trovaci%20Gusto.app/www/index.html

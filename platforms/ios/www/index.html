@@ -51,7 +51,7 @@
 		    </div>
 
 
-		    <div data-theme="" data-role="footer" data-position="fixed" class="footer_cat">
+		    <div data-theme="" data-role="footer" data-position="fixed" data-tap-toggle="false" class="footer_cat">
 		        <h3>Some copyright information about TrovaciGusto</h3>
 		    </div>
 		</div>
@@ -81,7 +81,7 @@
 		    </div>
 
 
-		    <div data-theme="" data-role="footer" data-position="fixed" class="footer_cat">
+		    <div data-theme="" data-role="footer" data-position="fixed" data-tap-toggle="false" class="footer_cat">
 		        <h3>Some copyright information about TrovaciGusto</h3>
 		    </div>
 		</div>
@@ -90,7 +90,7 @@
 
 		<!-- CUSTOMERS LIST -->
         <div data-role="page" id="customersList_cat">
-		    <div data-theme="a" data-role="header" data-position="fixed" data-add-back-btn="true">
+		    <div data-theme="a" data-role="header" data-position="fixed" data-tap-toggle="false" data-add-back-btn="true">
 		        <h3>Elenco clienti</h3>
 		    </div>
 		 
@@ -105,7 +105,7 @@
 		    </div>
 
 
-		    <div data-theme="" data-role="footer" data-position="fixed" class="footer_cat">
+		    <div data-theme="" data-role="footer" data-position="fixed" data-tap-toggle="false" class="footer_cat">
 		        <h3>Some copyright information about TrovaciGusto</h3>
 		    </div>
 		</div>
@@ -113,7 +113,7 @@
 
 		<!-- CUSTOMER DETAILS -->
         <div data-role="page" id="customersDetail_cat">
-		    <div data-theme="a" data-role="header" data-position="fixed" data-add-back-btn="true">
+		    <div data-theme="a" data-role="header" data-position="fixed" data-tap-toggle="false" data-add-back-btn="true">
 		        <h3>Elenco clienti</h3>
 		    </div>
 		 
@@ -140,6 +140,7 @@
 						        <ul data-role="listview">
 						            <!-- Some notes -->
 						            <textarea name="textarea" id="textarea"></textarea>
+                                    <a id="send_customerNote" data-role="button" class="ui-btn" data-mini="true" data-theme="a">Aggiungi note</a>
 						        </ul>
 						    </div>
 				  		</div>
@@ -152,7 +153,7 @@
 		    	</div>
 		    </div>
 
-		    <div data-theme="" data-role="footer" data-position="fixed" class="footer_cat">
+		    <div data-theme="" data-role="footer" data-position="fixed" data-tap-toggle="false" class="footer_cat">
 		        <h3>Some copyright information about TrovaciGusto</h3>
 		    </div>
 		</div>
@@ -162,7 +163,7 @@
         
         <!-- ORDERS LIST -->
         <div data-role="page" id="orders_list">
-		    <div data-theme="a" data-role="header" data-position="fixed" data-add-back-btn="true">
+		    <div data-theme="a" data-role="header" data-position="fixed" data-tap-toggle="false" data-add-back-btn="true">
 		        <h3>Elenco ordini</h3>
 		    </div>
 		 
@@ -175,8 +176,51 @@
 				
 		    </div>
 
+		    <div data-theme="" data-role="footer" data-position="fixed" data-tap-toggle="false" class="footer_cat">
+		        <h3>Some copyright information about TrovaciGusto</h3>
+		    </div>
+		</div>
 
-		    <div data-theme="" data-role="footer" data-position="fixed" class="footer_cat">
+
+
+
+        <!-- ORDER -->
+        <div data-role="page" id="selected_order">
+		    <div data-theme="a" data-role="header" data-position="fixed" data-tap-toggle="false" data-add-back-btn="true">
+		        <h3>Dettaglio ordine</h3>
+		    </div>
+
+
+		    <div data-role="content" class="scrollable">
+
+                <div id="order">
+                    <!-- Populate items dinamically -->
+                </div>
+
+		    </div>
+
+            <div data-role="popup" data-position-to="window" id="popupMenu" data-theme="b">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend>Motivazione dell'annullamento:</legend>
+                            <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" />
+                            <label for="radio-choice-1">Motivo 1</label>
+
+                            <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
+                            <label for="radio-choice-2">Motivo 2</label>
+
+                            <input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3"  />
+                            <label for="radio-choice-3">Motivo 3</label>
+
+                            <input type="radio" name="radio-choice-1" id="radio-choice-4" value="choice-4"  />
+                            <label for="radio-choice-4">Motivo 4</label>
+
+                        <a id="send_reasonDecline" data-role="button" class="ui-btn" data-mini="true" data-theme="a">INVIA</a>
+                    </fieldset>
+                </div>
+            </div>
+
+		    <div data-theme="" data-role="footer" data-position="fixed" data-tap-toggle="false" class="footer_cat">
 		        <h3>Some copyright information about TrovaciGusto</h3>
 		    </div>
 		</div>

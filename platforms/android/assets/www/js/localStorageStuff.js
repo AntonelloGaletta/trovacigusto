@@ -3,9 +3,11 @@ var localStorageCat = {
 	table : {
 		customers: "_customers",
 		selectedCustomer: "_selectedCustomer",
-		orders: "_orders"
+		orders: "_orders",
+        order: "_selectedOrders",
 	},
 
+    // CUSTOMERS
 	saveCustomers : function(allCustomers) {
 		localStorage.setItem(localStorageCat.table.customers, JSON.stringify(allCustomers));
 	},
@@ -26,5 +28,29 @@ var localStorageCat = {
 
 	removeSelectedCustomer : function() {
 		localStorage.removeItem(localStorageCat.table.selectedCustomer);
-	}
+	},
+    
+    
+    //  ORDERS
+    saveOrders : function(allOrders) {
+		localStorage.setItem(localStorageCat.table.orders, JSON.stringify(allOrders));
+	},
+
+	saveSelectedOrder : function(selOrder) {
+		localStorage.setItem(localStorageCat.table.order, JSON.stringify(selOrder));
+	},
+    
+    retriveOrders : function() {
+		var orders = localStorage.getItem(localStorageCat.table.orders);
+		return JSON.parse(orders);
+	},
+
+	retriveSelectedOrder : function() {
+		var selectedOrder = localStorage.getItem(localStorageCat.table.order);
+		return JSON.parse(selectedOrder);
+	},
+
+	removeSelectedOrder : function() {
+		localStorage.removeItem(localStorageCat.table.order);
+	},
 }

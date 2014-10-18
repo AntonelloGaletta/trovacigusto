@@ -21,6 +21,7 @@ var app = {
         if (Multiplatform.navigator.connection("WIFI")) {
             
             document.addEventListener('deviceready', this.onDeviceReady, false);
+            document.addEventListener("backbutton", this.onBackKeyDown, false);
 
             // Login event
             $("#submitLogin_cat").on("tap", function() {
@@ -68,14 +69,14 @@ var app = {
                     customer.data.surname = localCustomers.data[i].surname;
                     customer.data.email = localCustomers.data[i].email;
 
-                    var singleCustomer = $("<li data-theme='a'><a href='#' id='"+customer.data.id+"'>"
+                    var singleCustomer = $("<li data-theme='a'><a href='#' data-id='"+customer.data.id+"'>"
                         +"<img src='img/avatar.jpg' style='width: auto;' />"
                         +"<h2>"+customer.data.surname+"&nbsp;"+customer.data.name+"</h2>"
                         +"<p>Email: "+customer.data.email+"</p>"
                         +"</a></li>");
 
                     singleCustomer.on("tap", function() {
-                        var customerId = $(this).find('a').attr("id");
+                        var customerId = $(this).find('a').attr("data-id");
                         servers.private.query(api+ristID+"/customers", "/"+customerId, "GET", "", servers.callbacks.handleSelectedCustomer);
                     });
                     customersListview.append(singleCustomer);
@@ -117,16 +118,18 @@ var app = {
 
                 // TAB MAPS
                 
-                /*
-                var _lat = (selectedCustomer.data.bundle.addresses[0].lat);
-                var _lon = (selectedCustomer.data.bundle.addresses[0].lon);
+
+//                var _lat = (selectedCustomer.data.bundle.addresses[0].lat);
+//                var _lon = (selectedCustomer.data.bundle.addresses[0].lon);
+                var _lat = 45.4643324;
+                var _lon = 9.1678994;
                 var _zoom = 12;
                 
                 var map = new GMaps({
                     div: '#map_canvas',
                     lat: _lat,
                     lng: _lon,
-                    zoom: 12,
+                    zoom: _zoom,
                     zoomControl : true,
                     zoomControlOpt: {
                         style : 'SMALL',
@@ -140,7 +143,7 @@ var app = {
                   lat: _lat,
                   lng: _lon
                 });
-                */
+
             });
 
             $("#customersDetail_cat").on("pageshow", function(event) {
@@ -167,6 +170,7 @@ var app = {
                 ordersListview.html("");
                 var localOrders = localStorageCat.retriveOrders();
                 var status_icon = "";
+                var typeOfOrder = "";
                 
                 for (var i=0; i<localOrders.data.length; i++) {
                     
@@ -197,24 +201,81 @@ var app = {
                     } else {
                         status_icon = "yellow";
                     }
-                    var singleOrder = $("<div data-role='collapsible' data-iconpos='right'><h3>"
+
+                    if(order.data.serviceType == "delivery") {
+                        typeOfOrder = "delivery";
+                    } else if(order.data.serviceType == "table") {
+                        typeOfOrder = "table";
+                    } else if(order.data.serviceType == "takeaway") {
+                        typeOfOrder = "takeaway";
+                    } else {
+                        typeOfOrder = "null";
+                    }
+
+                    var singleOrder = $("<div id='"+order.data.id+"' data-role='collapsible' data-iconpos='right'><h3>"
+                        +"<img src='img/"+typeOfOrder+".png' style='width: 30px; height: 30px;' />"
                         +"<img src='img/"+status_icon+".png' style='width: auto;' />"
                         +order.data.serviceType+"</h3>"
-                        +"<a href='#' id='customer_"+order.data.id+"'>"
-                        +"<p id='"+order.data.id+"'>Prezzo totale: <strong>"+order.data.totalPrice+order.data.currency+"</strong></p>"
+                        +"<div style='float: left; height: 60px;'>"
+                        +"<p>Prezzo totale: <strong>"+order.data.totalPrice+order.data.currency+"</strong></p>"
                         +"<p>Orario: <strong>"+order.data.serviceTime+"</strong></p>"
-                        +"</a></div>");
+                        +"</div>"
+                        +"<a data-role='button' data-theme='a' class='ui-btn' data-mini='true' style='float:right; margin-top: 20px;' data-id='"+order.data.id+"' id='customer_"+order.data.id+"'>VISUALIZZA</a>"
+                        +"</div>");
 
-                    $('#customer_'+order.data.id).on("tap", function() {
-                        alert("cliccato");
-                        var orderId = $(this).find('a').attr("id");
-                        servers.private.query(api+ristID+orderId, "/detail", "GET", "", servers.callbacks.handleSelectedOrder);
+                    singleOrder.on("tap", "#customer_"+order.data.id,function() {
+                        var orderId = $(this).attr("data-id");
+                        servers.private.query(api+"order/"+ristID+"/"+orderId, "/detail", "GET", "", servers.callbacks.handleSelectedOrder);
                     });
                     ordersListview.append(singleOrder);
                 }
                 ordersListview.collapsibleset ("refresh");
             });
             
+
+
+            $("#selected_order").on("pagebeforeshow", function(event) {
+
+                var _singleOrder = $("#order");
+                    _singleOrder.html("");
+                    _singleOrder.empty();
+
+                    var selectedOrder = localStorageCat.retriveSelectedOrder();
+                    var detailsSelectedOrder;
+
+                    var staticInfo = "<img src='img/avatar.jpg' style='float:left;' /><p>NOME: <strong>Tizio</strong></p>"+"<p>COGNOME: <strong>Caio</strong></p><hr />";
+                    var buttonConfirm = "<a data-role='button' data-theme='a' class='ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-check ui-btn-icon-left ui-btn-a' style='float: left;width: 30%;'>CONFERMA</a>";
+                    var buttonDecline = "<a href='#popupMenu' data-rel='popup' data-transition='slideup' class='ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-a' style='float: right;width: 30%;'>ANNULLA</a>";
+
+
+                    _singleOrder.append(staticInfo);
+
+                    if(selectedOrder.length != 0) {
+                        for(var count =0; count < selectedOrder.length; count++) {
+                            detailsSelectedOrder = (
+                                "<p></p>"
+                                +"<p>Piatto: <strong>"+selectedOrder[count][1]+"</strong></p>"
+                                +"<p>Prezzo: <strong>"+selectedOrder[count][2]+selectedOrder[count][3]+"</strong></p>"
+                                +"<hr />");
+
+                                _singleOrder.append(detailsSelectedOrder);
+                        }
+                    }
+
+                    _singleOrder.append(buttonConfirm);
+                    _singleOrder.append(buttonDecline);
+
+
+
+                    $('#declineBTN').on('tap', function() {
+                        // notification RADIO BUTTONS
+                        Multiplatform.navigator.notification.alert("Attenzione: ordine annullato, invia feedback sul motivo della cancellazione", function() {});
+                    });
+
+
+                //_singleOrder.listview("refresh");
+            });
+
         }
     },
     // deviceready Event Handler
@@ -223,6 +284,13 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+    },
+
+    onBackKeyDown: function() {
+        app.receivedEvent('onBackKeyDown');
+        if($.mobile.activePage.is('#loginPage_cat')){
+            e.preventDefault();
+        }
     },
 
     // Update DOM on a Received Event

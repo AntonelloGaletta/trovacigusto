@@ -1,3 +1,22 @@
+a:focus, a:hover, a {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+input {
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+textarea {
+    width: 90%;
+    margin: 0 auto;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
 #loginPage_cat {
 	background-image: url('../img/hp03.jpg') !important;
 	background-position: 0px 60px;
@@ -41,6 +60,18 @@
 }
 
 
+
+
+/** POPUP **/
+.ui-popup-screen.in {
+    background-color: #000;
+}
+
+fieldset.ui-controlgroup.ui-controlgroup-vertical.ui-corner-all {
+    padding: 0 10px;
+}
+
+
 /*ORDERS*/
 .ui-collapsible-content a {
     text-decoration: none;
@@ -61,4 +92,16 @@
 
 .green_icon {
     background-image: url('../img/green.png');
+}
+
+.ui-collapsible-inset.ui-collapsible-themed-content .ui-collapsible-content {
+    min-height: 120px;
+}
+
+.ui-loading .ui-loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
 }
