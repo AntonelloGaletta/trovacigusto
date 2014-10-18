@@ -68,14 +68,14 @@ var app = {
                     customer.data.surname = localCustomers.data[i].surname;
                     customer.data.email = localCustomers.data[i].email;
 
-                    var singleCustomer = $("<li data-theme='a'><a href='#' id='"+customer.data.id+"'>"
+                    var singleCustomer = $("<li data-theme='a'><a href='#' data-id='"+customer.data.id+"'>"
                         +"<img src='img/avatar.jpg' style='width: auto;' />"
                         +"<h2>"+customer.data.surname+"&nbsp;"+customer.data.name+"</h2>"
                         +"<p>Email: "+customer.data.email+"</p>"
                         +"</a></li>");
 
                     singleCustomer.on("tap", function() {
-                        var customerId = $(this).find('a').attr("id");
+                        var customerId = $(this).find('a').attr("data-id");
                         servers.private.query(api+ristID+"/customers", "/"+customerId, "GET", "", servers.callbacks.handleSelectedCustomer);
                     });
                     customersListview.append(singleCustomer);
@@ -197,22 +197,67 @@ var app = {
                     } else {
                         status_icon = "yellow";
                     }
-                    var singleOrder = $("<div data-role='collapsible' data-iconpos='right'><h3>"
+                    var singleOrder = $("<div id='"+order.data.id+"' data-role='collapsible' data-iconpos='right'><h3>"
                         +"<img src='img/"+status_icon+".png' style='width: auto;' />"
                         +order.data.serviceType+"</h3>"
-                        +"<a href='#' id='customer_"+order.data.id+"'>"
-                        +"<p id='"+order.data.id+"'>Prezzo totale: <strong>"+order.data.totalPrice+order.data.currency+"</strong></p>"
+                        +"<div style='float: left; height: 60px;'>"
+                        +"<p>Prezzo totale: <strong>"+order.data.totalPrice+order.data.currency+"</strong></p>"
                         +"<p>Orario: <strong>"+order.data.serviceTime+"</strong></p>"
-                        +"</a></div>");
+                        +"</div>"
+                        +"<button style='float:right; height: 40px; margin-top: 20px;' data-id='"+order.data.id+"' id='customer_"+order.data.id+"'>VISUALIZZA</button>"
+                        +"</div>");
 
-                    $('#customer_'+order.data.id).on("tap", function() {
-                        alert("cliccato");
-                        var orderId = $(this).find('a').attr("id");
-                        servers.private.query(api+ristID+orderId, "/detail", "GET", "", servers.callbacks.handleSelectedOrder);
+                    singleOrder.on("tap", "#customer_"+order.data.id,function() {
+                        var orderId = $(this).attr("data-id");
+                        servers.private.query(api+"order/"+ristID+"/"+orderId, "/detail", "GET", "", servers.callbacks.handleSelectedOrder);
                     });
                     ordersListview.append(singleOrder);
                 }
                 ordersListview.collapsibleset ("refresh");
+            });
+            
+            
+            
+            $("#selected_order").on("pagebeforeshow", function(event) {
+                
+                var _singleOrder = $("#order");
+                    _singleOrder.html("");
+                    _singleOrder.empty();
+
+                    var selectedOrder = localStorageCat.retriveSelectedOrder();
+                    var detailsSelectedOrder;
+                    
+                    var staticInfo = "<img src='img/avatar.jpg' style='float:left;' /><p>NOME: <strong>Tizio</strong></p>"+"<p>COGNOME: <strong>Caio</strong></p><hr />";
+                    var buttonConfirm = "<a data-role='button' class='ui-btn' data-mini='true' data-theme='a' style='float: left;width: 40%;'>CONFERMA</a>";
+                    var buttonDecline = "<a data-role='button' id='declineBTN' class='ui-btn' data-mini='true' data-theme='a' style='float: right;width: 40%;'>CONFERMA</a>";
+                
+                    
+                    _singleOrder.append(staticInfo);
+                
+                    if(selectedOrder.length != 0) {
+                        for(var count =0; count < selectedOrder.length; count++) {
+                            detailsSelectedOrder = (
+                                "<p></p>"
+                                +"<p>Piatto: <strong>"+selectedOrder[count][1]+"</strong></p>"
+                                +"<p>Prezzo: <strong>"+selectedOrder[count][2]+selectedOrder[count][3]+"</strong></p>"
+                                +"<hr />");
+                                
+                                _singleOrder.append(detailsSelectedOrder);
+                        }
+                    }
+                
+                    _singleOrder.append(buttonConfirm);
+                    _singleOrder.append(buttonDecline);
+                    
+                
+                
+                    $('#declineBTN').on('tap', function() {
+                        // notification RADIO BUTTONS 
+                        Multiplatform.navigator.notification.alert("Attenzione: ordine annullato, invia feedback sul motivo della cancellazione", function() {});
+                    });
+                    
+                
+                //_singleOrder.listview("refresh");
             });
             
         }

@@ -62,3 +62,15 @@
 .green_icon {
     background-image: url('../img/green.png');
 }
+
+.ui-collapsible-inset.ui-collapsible-themed-content .ui-collapsible-content {
+    min-height: 80px;
+}
+
+.ui-loading .ui-loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+}

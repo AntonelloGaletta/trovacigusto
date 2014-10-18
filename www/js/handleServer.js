@@ -200,6 +200,62 @@ var servers = {
                console.log("parsing error!");
             }
         },
+        
+        
+        handleSelectedOrder: function(rp) {
+            console.log("[callback: handleSelectedOrder]");
+            var _order = $.parseJSON(JSON.stringify(rp));
+            if (_order && _order.success === true) {
+
+                console.log("start parsing SINGLE order JSON");
+                console.log(_order);
+
+                        
+                    order.data.id             = _order.data.id            
+                    order.data.sessionId      = _order.data.sessionId     
+                    order.data.status         = _order.data.status        
+                    order.data.data           = _order.data.data          
+                    order.data.seats          = _order.data.seats         
+                    order.data.timestamp      = _order.data.timestamp     
+                    order.data.serviceDate    = _order.data.serviceDate   
+                    order.data.serviceTime    = _order.data.serviceTime   
+                    order.data.serviceType    = _order.data.serviceType   
+                    order.data.servicePrice   = _order.data.servicePrice  
+                    order.data.currency       = _order.data.currency      
+                    order.data.price          = _order.data.price         
+                    order.data.discountAmount = _order.data.discountAmount
+                    order.data.discountReason = _order.data.discountReason
+                    order.data.notes          = _order.data.notes         
+                    order.data.bookingConfirm = _order.data.bookingConfirm
+                    order.data.bookingCode    = _order.data.bookingCode
+                    
+                    
+                    if(_order.data.bundle.items.length > 0) {
+                        
+                        var items = [];
+                        
+                        for(var count =0; count < _order.data.bundle.items.length; count++) {
+                            var _item = [];
+                            
+                            _item.push(_order.data.bundle.items[count].id, 
+                                       _order.data.bundle.items[count].name, 
+                                       _order.data.bundle.items[count].price,
+                                       _order.data.bundle.items[count].currency);
+                            
+                            items.push(_item);
+                        }
+                        
+                        localStorageCat.saveSelectedOrder(items);
+                        
+                        $.mobile.pageContainer.pagecontainer("change", "#selected_order", { transition: 'slide' });
+                    }
+                
+                
+                return
+            } else {
+               console.log("parsing error!");
+            }
+        }
 
     }
 }
